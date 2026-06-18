@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-faa-delays",
+  "version": "0.1.0",
+  "description": "FAA Delays MCP — live US airport operational status (FAA, free, no auth).",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "faa-delays"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-faa-delays"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
