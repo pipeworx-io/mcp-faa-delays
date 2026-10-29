@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-faa-delays",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "FAA Delays MCP — live US airport operational status (FAA, free, no auth).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-faa-delays": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "faa-delays"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-faa-delays.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/faa-delays",
   "pipeworx": {
-    "sourceHash": "v1-720876ef65d5c073acec6035beb8fdf955128f438d0fe27164b8e480411ee53a",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "faa-delays",
+    "gatewaySlug": "faa-delays",
+    "sourceHash": "v1-dd1334e041e6bcf30305cf21c272fdd4d0a930b527b75de725240c8a60b70a30",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
