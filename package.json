@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-faa-delays",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FAA Delays MCP — live US airport operational status (FAA, free, no auth).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "faa-delays",
     "gatewaySlug": "faa-delays",
-    "sourceHash": "v1-dd1334e041e6bcf30305cf21c272fdd4d0a930b527b75de725240c8a60b70a30",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-4dd237fe8c92961963d03c55b194b8b6480185ade8d9bed2c10a8c9277bb74ab",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
